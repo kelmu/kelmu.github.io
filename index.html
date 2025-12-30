@@ -1,1 +1,73 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {
+		background-color: whitesmoke;
+		margin: 5%;
+		/* padding: 5px;
+		border: 1px dotted black;
+		border-radius: 10px; */
+		font-family: "Monaco", monospace, sans-serif;
+	}
+	h1{
+		margin: 0;
+	}
+	a{
+		color: #0066FF;
+	}
+	
+	/*hide the inputs/checkmarks and submenu*/
+	input, p.submenu {
+	  display: none;
+	}
+
+	/*position the label*/
+	label {
+	  position: relative;
+	  display: inline;
+	  cursor: pointer;
+	  color: #0066FF;
+	  text-decoration: underline;
+	}
+
+	/*show the submenu when input is checked*/
+	input:checked~p.submenu {
+	  display: block;
+	  position: relative;
+	  border: 1px dotted black;
+	  border-radius: 10px;
+	}
+</style>
+</head>
+
+<body>
+	<h1>Hello!</h1>
+	<p>I'm Kelly. This is a basic website to document things I've worked on. It's still a work in progress.</p>
+	<p>
+		About me:
+		<ul>
+		<li> I currently work as a laboratory technician. </li>
+		<li> I have a background in biology in computer science, and a very strong interest in medicine and the
+			healthcare system. </li>
+		<li> In my free time, I like to read and
+				<!-- <input id="readDropdown" type="checkbox" name="menu" />
+				<label for="readDropdown">read</label>
+				<p class="submenu"> I currently recommend <i>The Secret History</i> by Donna Tartt. </p>
+				
+				and
+				
+				(This is commented out because I still need to figure out how to get only one to display at once,
+				and make them display a bit more nicely. -->
+				
+				<input id="moviesDropdown" type="checkbox" name="menu" />
+				<label for="moviesDropdown">watch movies.</label>
+				<p class="submenu"> I recommend <i>Apollo 11</i> (2019) if you want a good documentary,
+				<i>Anatomy of a Fall</i> (2023) if you want a serious drama, or <i>F1</i> (2025) if you
+				just want to have a fun time.</p>
+		</li>
+		</ul>
+	</p>
+	<p>You can reach me at <a href="mailto:kelly@mayhew.dev">kelly@mayhew.dev</a>.</p>
+</body>
+</html> 
